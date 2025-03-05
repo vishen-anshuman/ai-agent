@@ -1,0 +1,507 @@
+{
+  "parameters": [
+    {
+      "id": "department",
+      "type": "apiDropdownCheckbox",
+      "label": "Department",
+      "apiUrl": "apis/employers/list-of-values/department?employerId=5293f1aa-af1c-4080-bd38-093030b2288d&appId=zohobooks",
+      "values": [
+        "Accounts"
+      ],
+      "mandatory": true
+    },
+    {
+      "id": "location",
+      "type": "apiDropdownCheckbox",
+      "label": "Location",
+      "apiUrl": "apis/employers/list-of-values/location?employerId=5293f1aa-af1c-4080-bd38-093030b2288d&appId=zohobooks",
+      "values": [
+        "Ahmedabad"
+      ],
+      "mandatory": true
+    },
+    {
+      "id": "test",
+      "type": "number",
+      "label": "Test",
+      "values": [],
+      "mandatory": false
+    },
+    {
+      "id": "mappingParameters",
+      "type": "multiUrlTable",
+      "columns": [
+        {
+          "id": "salaryComponent",
+          "type": "dropdown",
+          "label": "Salary Component",
+          "options": [
+            {
+              "id": "/00001/00001",
+              "displayName": "INCOME"
+            },
+            {
+              "id": "/00001/00001/00001",
+              "displayName": "BASIC"
+            },
+            {
+              "id": "/00001/00001/00007",
+              "displayName": "HRA"
+            },
+            {
+              "id": "/00001/00001/00010",
+              "displayName": "CONVEYANCE"
+            },
+            {
+              "id": "/00001/00001/00013",
+              "displayName": "SPECIAL_ALLOW"
+            },
+            {
+              "id": "/00001/00002",
+              "displayName": "DEDUCT"
+            },
+            {
+              "id": "/00001/00002/00001",
+              "displayName": "PF"
+            },
+            {
+              "id": "/00001/00003",
+              "displayName": "FULL_INC"
+            }
+          ],
+          "isPrimary": true,
+          "mandatory": true
+        },
+        {
+          "id": "payrollComponent",
+          "type": "dropdown",
+          "label": "Zoho Books Account",
+          "options": [
+            {
+              "id": "6038196000000000370",
+              "displayName": "Advance Tax"
+            },
+            {
+              "id": "6038196000000091011",
+              "displayName": "Prepaid Expenses"
+            },
+            {
+              "id": "6038196000000091017",
+              "displayName": "TDS Receivable"
+            },
+            {
+              "id": "6038196000000035001",
+              "displayName": "Employee Advance"
+            },
+            {
+              "id": "6038196000000000358",
+              "displayName": "Undeposited Funds"
+            },
+            {
+              "id": "6038196000000000361",
+              "displayName": "Petty Cash"
+            },
+            {
+              "id": "6038196000000000364",
+              "displayName": "Accounts Receivable"
+            },
+            {
+              "id": "6038196000000000367",
+              "displayName": "Furniture and Equipment"
+            },
+            {
+              "id": "6038196000000000376",
+              "displayName": "Tax Payable"
+            },
+            {
+              "id": "6038196000000005001",
+              "displayName": "Unearned Revenue"
+            },
+            {
+              "id": "6038196000000091021",
+              "displayName": "TDS Payable"
+            },
+            {
+              "id": "6038196000000003001",
+              "displayName": "Opening Balance Adjustments"
+            },
+            {
+              "id": "6038196000000035003",
+              "displayName": "Employee Reimbursements"
+            },
+            {
+              "id": "6038196000000000373",
+              "displayName": "Accounts Payable"
+            },
+            {
+              "id": "6038196000000091097",
+              "displayName": "Mortgages"
+            },
+            {
+              "id": "6038196000000091099",
+              "displayName": "Construction Loans"
+            },
+            {
+              "id": "6038196000000045001",
+              "displayName": "Dimension Adjustments"
+            },
+            {
+              "id": "6038196000000000379",
+              "displayName": "Retained Earnings"
+            },
+            {
+              "id": "6038196000000000382",
+              "displayName": "Owner's Equity"
+            },
+            {
+              "id": "6038196000000000385",
+              "displayName": "Opening Balance Offset"
+            },
+            {
+              "id": "6038196000000091101",
+              "displayName": "Investments"
+            },
+            {
+              "id": "6038196000000091103",
+              "displayName": "Distributions"
+            },
+            {
+              "id": "6038196000000012001",
+              "displayName": "Drawings"
+            },
+            {
+              "id": "6038196000000091113",
+              "displayName": "Capital Stock"
+            },
+            {
+              "id": "6038196000000091115",
+              "displayName": "Dividends Paid"
+            },
+            {
+              "id": "6038196000000010001",
+              "displayName": "Other Charges"
+            },
+            {
+              "id": "6038196000000000388",
+              "displayName": "Sales"
+            },
+            {
+              "id": "6038196000000000391",
+              "displayName": "General Income"
+            },
+            {
+              "id": "6038196000000000394",
+              "displayName": "Interest Income"
+            },
+            {
+              "id": "6038196000000000397",
+              "displayName": "Late Fee Income"
+            },
+            {
+              "id": "6038196000000000406",
+              "displayName": "Discount"
+            },
+            {
+              "id": "6038196000000014001",
+              "displayName": "Shipping Charge"
+            },
+            {
+              "id": "6038196000000032023",
+              "displayName": "Lodging"
+            },
+            {
+              "id": "6038196000000072001",
+              "displayName": "Purchase Discounts"
+            },
+            {
+              "id": "6038196000000000400",
+              "displayName": "Office Supplies"
+            },
+            {
+              "id": "6038196000000000403",
+              "displayName": "Advertising And Marketing"
+            },
+            {
+              "id": "6038196000000000409",
+              "displayName": "Bank Fees and Charges"
+            },
+            {
+              "id": "6038196000000000412",
+              "displayName": "Credit Card Charges"
+            },
+            {
+              "id": "6038196000000000418",
+              "displayName": "Travel Expense"
+            },
+            {
+              "id": "6038196000000000421",
+              "displayName": "Telephone Expense"
+            },
+            {
+              "id": "6038196000000000424",
+              "displayName": "Automobile Expense"
+            },
+            {
+              "id": "6038196000000000427",
+              "displayName": "IT and Internet Expenses"
+            },
+            {
+              "id": "6038196000000000430",
+              "displayName": "Rent Expense"
+            },
+            {
+              "id": "6038196000000000433",
+              "displayName": "Janitorial Expense"
+            },
+            {
+              "id": "6038196000000000436",
+              "displayName": "Postage"
+            },
+            {
+              "id": "6038196000000000439",
+              "displayName": "Bad Debt"
+            },
+            {
+              "id": "6038196000000000442",
+              "displayName": "Printing and Stationery"
+            },
+            {
+              "id": "6038196000000000445",
+              "displayName": "Salaries and Employee Wages"
+            },
+            {
+              "id": "6038196000000035005",
+              "displayName": "Uncategorized"
+            },
+            {
+              "id": "6038196000000000448",
+              "displayName": "Meals and Entertainment"
+            },
+            {
+              "id": "6038196000000000451",
+              "displayName": "Depreciation Expense"
+            },
+            {
+              "id": "6038196000000000454",
+              "displayName": "Consultant Expense"
+            },
+            {
+              "id": "6038196000000000457",
+              "displayName": "Repairs and Maintenance"
+            },
+            {
+              "id": "6038196000000000460",
+              "displayName": "Other Expenses"
+            },
+            {
+              "id": "6038196000000091117",
+              "displayName": "Raw Materials And Consumables"
+            },
+            {
+              "id": "6038196000000091119",
+              "displayName": "Merchandise"
+            },
+            {
+              "id": "6038196000000091121",
+              "displayName": "Transportation Expense"
+            },
+            {
+              "id": "6038196000000091123",
+              "displayName": "Depreciation And Amortisation"
+            },
+            {
+              "id": "6038196000000091125",
+              "displayName": "Contract Assets"
+            },
+            {
+              "id": "6038196000000034003",
+              "displayName": "Cost of Goods Sold"
+            },
+            {
+              "id": "6038196000000091105",
+              "displayName": "Labor"
+            },
+            {
+              "id": "6038196000000091107",
+              "displayName": "Materials"
+            },
+            {
+              "id": "6038196000000091109",
+              "displayName": "Subcontractor"
+            },
+            {
+              "id": "6038196000000091111",
+              "displayName": "Job Costing"
+            },
+            {
+              "id": "6038196000000000415",
+              "displayName": "Exchange Gain or Loss"
+            },
+            {
+              "id": "6038196000000034001",
+              "displayName": "Inventory Asset"
+            }
+          ],
+          "isPrimary": true,
+          "mandatory": true
+        },
+        {
+          "id": "action",
+          "type": "dropdown",
+          "label": "Type",
+          "options": [
+            {
+              "id": "debit",
+              "displayName": "Debit"
+            },
+            {
+              "id": "credit",
+              "displayName": "Credit"
+            }
+          ],
+          "isPrimary": false,
+          "mandatory": true
+        }
+      ],
+      "mandatory": true,
+      "addRowText": "+ Add Row",
+      "tableValues": [
+        {
+          "action": {
+            "id": "credit",
+            "value": "Credit"
+          },
+          "salaryComponent": {
+            "id": "/00001/00001",
+            "value": "PF"
+          },
+          "payrollComponent": {
+            "id": "6038196000000000370",
+            "value": "Advance Tax"
+          }
+        },
+        {
+          "action": {
+            "id": "credit",
+            "value": "Credit"
+          },
+          "salaryComponent": {
+            "id": "/00001/00001",
+            "value": "ESI"
+          },
+          "payrollComponent": {
+            "id": "6038196000000091011",
+            "value": "Prepaid Expenses"
+          }
+        },
+        {
+          "action": {
+            "id": "credit",
+            "value": "Credit"
+          },
+          "salaryComponent": {
+            "id": "/00001/00001",
+            "value": "LWF_EMPLOYER"
+          },
+          "payrollComponent": {
+            "id": "6038196000000091017",
+            "value": "TDS Receivable"
+          }
+        },
+        {
+          "action": {
+            "id": "credit",
+            "value": "Credit"
+          },
+          "salaryComponent": {
+            "id": "/00001/00001/00001",
+            "value": "LWF_EMPLOYEE"
+          },
+          "payrollComponent": {
+            "id": "6038196000000035001",
+            "value": "Employee Advance"
+          }
+        },
+        {
+          "action": {
+            "id": "Credit",
+            "value": "Credit"
+          },
+          "salaryComponent": {
+            "id": "/00001/00001/00001",
+            "value": "LOAN"
+          },
+          "payrollComponent": {
+            "id": "6038196000000000358",
+            "value": "Undeposited Funds"
+          }
+        },
+        {
+          "action": {
+            "id": "debit",
+            "value": "Debit"
+          },
+          "salaryComponent": {
+            "id": "/00001/00001/00001",
+            "value": "DEDUCT"
+          },
+          "payrollComponent": {
+            "id": "6038196000000000358",
+            "value": "Undeposited Funds"
+          }
+        }
+      ]
+    },
+    {
+      "id": "6038196000000091303",
+      "type": "string",
+      "label": "Custom Field: cf_test_string",
+      "mandatory": true
+    },
+    {
+      "id": "6038196000000091305",
+      "type": "dropdown",
+      "label": "Custom Field: cf_test_dropdown",
+      "options": [
+        {
+          "id": "6038196000000091307",
+          "displayName": "A"
+        },
+        {
+          "id": "6038196000000091309",
+          "displayName": "B"
+        },
+        {
+          "id": "6038196000000091311",
+          "displayName": "C"
+        },
+        {
+          "id": "6038196000000091313",
+          "displayName": "D"
+        }
+      ],
+      "mandatory": true
+    },
+    {
+      "id": "6038196000000091315",
+      "type": "radio",
+      "label": "Custom Field: cf_test_boolean",
+      "options": [
+        {
+          "id": "true",
+          "displayName": "True"
+        },
+        {
+          "id": "false",
+          "displayName": "False"
+        }
+      ],
+      "mandatory": false
+    }
+  ],
+  "employeeLoginDetails": {
+    "role": "ROLE_HR_ADMIN",
+    "username": "greytip@2@5293f1aa-af1c-4080-bd38-093030b2288d@2",
+    "employerID": "5293f1aa-af1c-4080-bd38-093030b2288d"
+  }
+}
